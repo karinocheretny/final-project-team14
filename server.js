@@ -7,7 +7,7 @@ var port = process.env.PORT || 3000;
 
 app.use(express.static('public'));
 
-app.engine('handlebars', exphbs.engine({ defaultLayout: 'main' }))
+app.engine('handlebars', exphbs.engine({ defaultLayout: null }))
 app.set('view engine', 'handlebars')
 
 

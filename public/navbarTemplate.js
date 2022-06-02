@@ -1,0 +1,6 @@
+(function() {
+  var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
+templates['navbar'] = template({"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    return "<header>\r\n    <a href=\"#\"><h1 class=\"site-title\">Crime Alerts</h1></a>\r\n\r\n    <nav class=\"navbar\">\r\n        <ul class=\"navlist\">\r\n            <li class=\"navitem navlink\"><a href=\"proj.html\">Home</a></li>\r\n            <li class=\"navitem navlink\"><a href=\"nw.html\">NW</a></li>\r\n            <li class=\"navitem navlink\"><a href=\"sw.html\">SW</a></li>\r\n            <li class=\"navitem navlink\"><a href=\"se.html\">SE</a></li>\r\n            <li class=\"navitem navlink\"><a href=\"e.html\">E</a></li>\r\n            <li class=\"navitem navlink\"><a href=\"ne.html\">NE</a></li>\r\n            <li class=\"navitem navlink\"><a href=\"n.html\">N</a></li>\r\n            <li class=\"navitem navlink\"><a href=\"posts.html\">Posts</a></li>\r\n            <li class=\"navitem navlink\"><a href=\"emergency.html\">Emergency Contacts</a></li>\r\n\r\n\r\n\r\n        </ul>\r\n    </nav>\r\n</header>\r\n";
+},"useData":true});
+})();
