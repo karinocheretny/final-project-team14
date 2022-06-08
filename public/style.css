@@ -1,7 +1,8 @@
 body {
     font-family: Roboto, Helvetica, sans-serif;
     margin: 0;
-    background-color: rgb(235, 235, 235);
+    background-color: black;
+    /*background: linear-gradient(to right, #000000 8%, #538589 100%);*/
 }
 
 a {
@@ -71,95 +72,112 @@ a {
 
 #map {
     position: absolute;
-    top: 150px;
+    top: 60px;
     left: 50px;
-    width: 450px;
-    height: 450px;
+    width: 1100px;
+    height: 800px;
     border-width: 5px;
     border-color: black;
     border: black;
     border-style: groove;
 }
 
-#nw_district {
-    width: 5px;
-    height: 15px;
-    border-radius: 0.4;
+/* From uiverse.io */
+/*https://uiverse.io/detail/cssbuttons-io/funny-dog-69 */
+.dist {
+    --glow-color: black;
+    --glow-spread-color: rgba(1, 24, 232, 0.3);
+    --enhanced-glow-color: rgb(231, 206, 255));
+    --btn-color: rgba(255, 243, 194, 1);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color), 0 0 4em 1em var(--glow-spread-color), inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
     position: relative;
-    background: red;
-    top: 180px;
-    left: 130px;
+    transition: all 0.3s;
+}
+
+.dist::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+
+    .dist:hover {
+        color: var(--btn-color);
+        background-color: var(--glow-color);
+        box-shadow: 0 0 1em .25em var(--glow-color), 0 0 4em 2em var(--glow-spread-color), inset 0 0 .75em .25em var(--glow-color);
+    }
+
+ .dist:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color), 0 0 2.5em 2em var(--glow-spread-color), inset 0 0 .5em .25em var(--glow-color);
+}
+
+#nw_district {
+    top: 290px;
+    left: 300px;
 }
 
 #sw_district {
-    width: 5px;
-    height: 15px;
-    border-radius: 0.4;
-    position: relative;
-    background: red;
-    top: 410px;
-    left: 200px;
+    top: 500px;
+    left: 300px;
 }
 
 #n_district {
-    width: 5px;
-    height: 15px;
-    border-radius: 0.4;
-    position: relative;
-    background: red;
-    top: 130px;
-    left: 100px;
+    top: 200px;
+    left: -180px;
 }
 
 #ne_district {
-    width: 5px;
-    height: 15px;
-    border-radius: 0.4;
-    position: relative;
-    background: red;
-    top: 240px;
-    left: 280px;
+    top: 280px;
+    left: 200px;
 }
 
 #se_district {
-    width: 5px;
-    height: 15px;
-    border-radius: 0.4;
-    position: relative;
-    background: red;
-    top: 370px;
-    left: 280px;
+    top: 450px;
+    left: 430px;
 }
 
 #e_district {
-    width: 5px;
-    height: 15px;
-    border-radius: 0.4;
-    position: relative;
-    background: red;
-    top: 280px;
-    left: 360px;
+    top: 435px;
+    left: 550px;
 }
 
-.dist {
-    border-radius: 50%;
+
+
+.site-title img{
+    width: 10%;
+    height: 10%;
 }
-
-    .dist:hover, .dist:focus {
-        background: rgb(17, 255, 0) !important;
-    }
-
 .site-title {
+    display: inline-block;
     margin: 0;
-    padding: 10px 20px;
+    /* padding: 10px 20px;
     font-size: 30px;
     font-weight: 100;
     background-color: #d3ab6d;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);*/
 }
 
 .navbar {
-    background-color: rgb(255, 255, 255);
+    top: 0px;
+    display: inline-block;
+    background-color: black;
     font-size: 18px;
     line-height: 22px;
 }
@@ -167,6 +185,15 @@ a {
 .navlist {
     margin: 0 0 0 20px;
     padding: 0;
+    display: inline-block;
+    left: 100px;
+}
+
+li {
+    list-style: none;
+    float: left;
+    margin-left: 15px;
+    padding-top: 0px;
 }
 
 .navitem {
@@ -174,7 +201,7 @@ a {
 }
 
 a {
-    color: #343434;
+    color: #ffeda3;
 }
 
     a:hover,
