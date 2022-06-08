@@ -2,13 +2,18 @@ var path = require('path');
 var express = require('express');
 var exphbs = require('express-handlebars');
 
+var header = require('./views/partials/navbar.handlebars')
+
+
+
 var app = express();
 var port = process.env.PORT || 3000;
 
 app.use(express.static('public'));
 
-app.engine('handlebars', exphbs.engine({ defaultLayout: null }))
-app.set('view engine', 'handlebars')
+app.engine('handlebars', exphbs.engine({defaultLayout: null }));
+app.set('view engine', 'handlebars');
+app.set('views', path.join(__dirname, 'views'));
 
 
 app.get('/', function (req, res, next) {
