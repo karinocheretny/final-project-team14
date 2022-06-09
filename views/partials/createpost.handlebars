@@ -27,15 +27,7 @@
                 <input type="range" min="1" max="10" id="report-severity-input">
             </div>  
             <div class="report-input-element">
-                <label for="alert-attribution-input">District</label>
-                <div class="district_dropdown dropdown" select id="alert-attribution-input">
-                    <option value="N">N</a>
-                    <option value="NW">NW</a>
-                    <option value="NE">NE</a>
-                    <option value="E">E</a>
-                    <option value="SW">SW</a>
-                    <option value="">SE</a>
-                </div>
+                {{> dropdown}}
             </div>
             <div class="report-input-element">
                 <label for="alert-neighborhood-input">Neighborhood</label>

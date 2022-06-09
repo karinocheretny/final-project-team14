@@ -1,7 +1,7 @@
 
 
 /* Inserts a new report into the page */
-function insertNewReport(reporttext, reportdistrict, reportdate, reporttime, reportneighborhood, reportseverity) {
+function insertNewReport(reporttext, reportdate, reporttime, reportneighborhood, reportseverity) {
     var new_report = Handlebars.templates.post({
       text: reporttext,
       date: reportdate,
@@ -10,6 +10,12 @@ function insertNewReport(reporttext, reportdistrict, reportdate, reporttime, rep
       district: reportdistrict,
       neighborhood:  reportneighborhood
     })
+    console.log("reporttext: ", reporttext)
+    console.log("reportdate: ", reportdate)
+    console.log("reportseverity: ", reportseverity)
+    console.log("reporttime: ", reporttime)
+    console.log("reportdistrict: ", reportdistrict)
+    console.log("reportneighborhood: ", reportneighborhood)
   
     var postContainer = document.querySelector('main.post-container');
     postContainer.insertAdjacentHTML('beforeend', new_report);
@@ -24,17 +30,24 @@ function insertNewReport(reporttext, reportdistrict, reportdate, reporttime, rep
     var reportdate = document.getElementById('report-date-input').value;
     var reportseverity = document.getElementById('report-severity-input').value;
     var reporttime = document.getElementById('report-time-input').value;
-    var reportdistrict = document.getElementById('report-district-input').value;
-    var reportneighborhood =  document.getElementById('alert-attribution-input').value; 
-    allPosts.push({
-        text: reportText,
-        date: reportdate,
-        time: reporttime,
-        severity: reportseverity,
-        district: reportdistrict,
-        neighborhood: reportneighborhood
-    }); 
-    hideCreateAlertModal();
+    //var reportdistrict = document.getElementById('report-district-input').value;
+    var reportneighborhood =  document.getElementById('alert-neighborhood-input').value; 
+    if(reportText && reportdate && reportseverity && reporttime && reportneighborhood){
+      allPosts.push({
+          text: reportText,
+          date: reportdate,
+          time: reporttime,
+          severity: reportseverity,
+          //district: reportdistrict,
+          neighborhood: reportneighborhood
+      
+      });
+      hideCreateAlertModal();
+      insertNewReport(reportText, reportdate, reporttime, reportneighborhood, reportseverity);
+    } else{
+      alert('You must fill in all forms')
+    }
+
     }
 
 
@@ -97,6 +110,7 @@ function insertNewReport(reporttext, reportdistrict, reportdate, reporttime, rep
       for(var i = 0; i < reportsCollection.length; i++){
           allPosts.push(parsePostElem(reportsCollection[i]))
       } */
+
 
       var createPostButton = document.getElementById('insert_new_alert');
       if (createPostButton) {

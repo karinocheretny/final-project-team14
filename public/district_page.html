@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>NW District</title> <!--This can be for any of the districts, I am using NW for this example-->
+        <title>{{District}}</title> <!--This can be for any of the districts, I am using NW for this example-->
         <link rel="stylesheet" href="/style.css" media="screen">
         <script src="/index.js" charset="utf-8" defer></script>
     
@@ -10,63 +10,6 @@
     <body>
         <header>
             {{> navbar}}
-
-            <!--Needs: 
-                button to add a report *
-                modal for adding a new report *
-                    in modal we need: 
-                        time and date *
-                        neighborhood
-                        description *
-                        username? *
-                        severity of crime? *
-                spot to see recent reports
-                -->
-            
-            <!--Getting a lot of this structure from the assignment 5 html-->
-            <button type="button" id= "new-report-button"><i class="report-button"></i></button>
-            
-            <!-- <div id="modal-backdrop" class="hidden"></div>
-            <div id="new-report-modal" class="hidden">
-                <div class="modal-header">
-                    <h3>Report a Crime</h3>
-                    <button type="button" class="report-close-button">&times;</button>"
-                </div>
-
-                <div class="modal-body">
-                    <div class="report-input-element">
-                        <label for="report-text-input">Description of Crime</label>
-                        <textarea id="report-text-input"></textarea>
-                    </div>
-                    <div class="report-input-element">
-                        <label for="report-author-input">Author</label>
-                        <input type="text" id="report-author-input">
-                    </div>
-                    <div class="report-input-element">
-                        <label for="report-date-input">Date</label>
-                        <input type="date" id="report-date-input">
-                    </div>
-                    <div class="report-input-element">
-                        <label for="report-time-input">Time</label>
-                        <input type="time" id="report-time-input">
-                    </div>          
-                    <div class="report-input-element">
-                        <label for="report-severity-input">Severity</label>
-                        <input type="range" min="1" max="10" id="report-severity-input">
-                    </div>  
-                    <div class="report-dropdown report-input-element">
-                        <button class="dropbtn">Neighborhood</button>
-                        <div class="dropdown-content">
-                          <a href="#">Link 1</a>
-                          <a href="#">Link 2</a>
-                          <a href="#">Link 3</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="report-cancel-button">Cancel</button>
-                    <button type="button" class="report-accept-button">Report</button>
-                </div> -->
 
             </div>
             <section>Reports</section>
