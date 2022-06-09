@@ -2,10 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\public",
-    "\\views",
-    "\\views\\layouts",
-    "\\views\\partials"
+    "\\views\\layouts"
   ],
-  "SelectedNode": "\\views\\partials\\dropdown.handlebars",
+  "SelectedNode": "\\public\\district_page.html",
   "PreviewInSolutionExplorer": false
 }
