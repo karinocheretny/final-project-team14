@@ -19,8 +19,11 @@ app.get('/', function (req, res, next) {
 
 
 app.get('/districts/:district', function (req, res, next) {
-
+    var district_name = req.params.district.toLowerCase();
+    console.log("==District: ", district_name)
+    res.status(200).render('basicPage', {        
 })
+});
 
 app.get('*', function (req, res) {
     res.status(404).render('basicPage', {
