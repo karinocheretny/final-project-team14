@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>Crime Alerts</title>
+
+    <link rel="stylesheet" href="style.css" media="screen">
+
+    <script src="index.js" charset="utf-8" defer></script>
+
+</head>
+<body>
+    <main class="post-container">
+    
+        {{#each posts}}
+            {{> post}}
+        {{/each}}
+        
+        {{> navbar}}
+
+        {{> createpost}}
+        
+        <div class="new_alert" id="insert_alert">
+            <button type="button" class="new_alert" id="insert_new_alert">+</button>
+        </div>
+
+    </main>
+</body>
+</html>
+
+
+    

@@ -10,21 +10,36 @@
         </div>
 
         <div class="modal-body">
-            <div class="alert-input-element">
-                <label for="alert-text-input">Report</label>
-                <textarea id="alert-text-input"></textarea>
+            <div class="report-input-element">
+                <label for="report-text-input">Report</label>
+                <textarea id="report-text-input"></textarea>
             </div>
-            <div class="alert-input-element">
-                <label for="alert-attribution-input">District</label>
-                <div class="district_dropdown">
-                    <a href="#">N</a>
-                    <a href="#">NW</a>
-                    <a href="#">NE</a>
-                    <a href="#">E</a>
-                    <a href="#">SW</a>
-                    <a href="#">SE</a>
-
-                </div>
+            <div class="report-input-element">
+                <label for="report-date-input">Date</label>
+                <input type="date" id="report-date-input">
+            </div>
+            <div class="report-input-element">
+                <label for="report-time-input">Time</label>
+                <input type="time" id="report-time-input">
+            </div>          
+            <div class="report-input-element">
+                <label for="report-severity-input">Severity</label>
+                <input type="range" min="1" max="10" id="report-severity-input">
+            </div>  
+            <div class="report-input-element">
+                <label for="districts">Which District</label>
+                    <select name="districts" id="report-district-input">
+                        <option value="n">North</option>
+                        <option value="ne">NorthEast</option>
+                        <option value="nw">NorthWest</option>
+                        <option value="e">East</option>
+                        <option value="se">SouthEast</option>
+                        <option value="sw">SouthWest</option>
+                </select>
+            </div>
+            <div class="report-input-element">
+                <label for="alert-neighborhood-input">Neighborhood</label>
+                <textarea id="alert-neighborhood-input">Neighborhood</textarea>
             </div>
         </div>
 
