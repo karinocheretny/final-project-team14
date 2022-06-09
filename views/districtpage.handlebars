@@ -10,16 +10,17 @@
     <script src="index.js" charset="utf-8" defer></script>
 
 </head>
-
 <body>
-{{!--     {{> header}}
+    <main class="district-container">
 
-    {{{body}}} --}}
+        {{> navbar}}
+        
+        {{#each district}}
+            {{> district}}
+        {{/each}}
 
-    {{> navbar}}
 
-    {{> map}}
-  
-
+    </main>
 </body>
 </html>
+

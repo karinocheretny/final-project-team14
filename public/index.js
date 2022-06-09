@@ -25,12 +25,14 @@ function insertNewReport(reporttext, reportdate, reporttime, reportneighborhood,
 
   var allPosts = []
 
+
+  
   function handleModalAcceptClick() {
     var reportText = document.getElementById('report-text-input').value;
     var reportdate = document.getElementById('report-date-input').value;
     var reportseverity = document.getElementById('report-severity-input').value;
     var reporttime = document.getElementById('report-time-input').value;
-    //var reportdistrict = document.getElementById('report-district-input').value;
+    var reportdistrict = document.getElementById('report-district-input').value;
     var reportneighborhood =  document.getElementById('alert-neighborhood-input').value; 
     if(reportText && reportdate && reportseverity && reporttime && reportneighborhood){
       allPosts.push({
@@ -38,10 +40,11 @@ function insertNewReport(reporttext, reportdate, reporttime, reportneighborhood,
           date: reportdate,
           time: reporttime,
           severity: reportseverity,
-          //district: reportdistrict,
+          district: reportdistrict,
           neighborhood: reportneighborhood
       
       });
+      console.log(reportText, reportdate, reportseverity, reporttime, reportdistrict, reportneighborhood)
       hideCreateAlertModal();
       insertNewReport(reportText, reportdate, reporttime, reportneighborhood, reportseverity);
     } else{

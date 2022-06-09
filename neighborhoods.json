@@ -1,5 +1,5 @@
 [
-    {"NW":[
+    {"nw":[
         {"name": "Forest Park"},
         {"name":"Linnton"},
         {"name":"Arlington Heights"},
@@ -14,7 +14,7 @@
         {"name":"Hillside"}
 
     ]},
-    {"N":[
+    {"n":[
         {"name":"St. Johns"},
         {"name":"Cathedral Park"},
         {"name":"Portsmouth"},
@@ -28,7 +28,7 @@
         {"name":"Piedmont"}
     ]
     },
-    {"NE":[
+    {"ne":[
         {"name":"Sunderland"},
         {"name":"Woodlawn"},
         {"name":"Humboldt"},
@@ -51,7 +51,7 @@
         {"name":"Sumner"},
         {"name":"Madison South"}
     ]},
-    {"E":[
+    {"e":[
         {"name":"Parkrose"},
         {"name":"Argay"},
         {"name":"Wilkes"},
@@ -66,7 +66,7 @@
         {"name":"Lents"},
         {"name":"Pleasant Valley"}
     ]},
-    {"SE":[
+    {"se":[
         {"name":"Kerns"},
         {"name":"Laurelhurst"},
         {"name":"Buckman"},
@@ -87,5 +87,26 @@
         {"name":"Mount Scott"},
         {"name":"Brentwood/Darlington"},
         {"name":"Ardenwald/Johnson Creek"}
-    ]}
+    ]},
+    {"sw":[
+        {"name":"Southwest Hills Residential League"},
+        {"name":"Bridlemile"},
+        {"name":"Hayhurst"},
+        {"name":"Maplewood"},
+        {"name":"Ashcreek"},
+        {"name":"Far SouthWest"},
+        {"name":"West Portland Park"},
+        {"name":"Multnomah"},
+        {"name":"Arnold Creek"},
+        {"name":"Marshall Park"},
+        {"name":"Collins View"},
+        {"name":"South Burlington"},
+        {"name":"Hillsdale"},
+        {"name":"Healy Heights"},
+        {"name":"Homestead"},
+        {"name":"South Portland"},
+        {"name":"Markham"}
+    ]
+
+    }
 ]
