@@ -23,6 +23,7 @@ var neighborhooddata = require("./neighborhoods.json")
 var neighborhoods = Object.keys(neighborhooddata)
 console.log(reportData)
 var keys = Object.keys(reportData);
+var keys2 = Object.keys(neighborhooddata)
 
 
 for( var i = 0; i < keys.length; i++){
@@ -31,9 +32,9 @@ for( var i = 0; i < keys.length; i++){
 }
 
 /* Gets the data for each district (their neighborhoods) */
-for( var i = 0; i < keys.length; i++){
-    var neighborhooddata2 = neighborhooddata[keys[i]]
-    console.log("==>Data: ", neighborhooddata2)
+for( var i = 0; i < keys2.length; i++){
+    var neighborhooddata2 = neighborhooddata[keys2[i]]
+    console.log("==>Data2: ", neighborhooddata2)
   }
 
 
@@ -68,7 +69,6 @@ app.get('/emergency', function (req, res, next) {
 app.get('/districts', function (req, res, next){
     if (districtdata){
         res.status(200).render('districtpage', {
-            districts:districtdata,
             neighborhoods:neighborhooddata
 
             
