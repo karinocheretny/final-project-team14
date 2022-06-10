@@ -41,7 +41,8 @@ for( var i = 0; i < keys.length; i++){
 
 app.get('/', function (req, res, next) {
     res.status(200).render('basicPage', {
-
+        mainPage: true,
+        showPosts: false
     })
 })
 
@@ -49,7 +50,8 @@ app.get('/', function (req, res, next) {
 
 app.get('/home', function (req, res, next) {
     res.status(200).render('basicPage', {
-
+        mainPage: true,
+        showPosts: false
     })
 })
 
