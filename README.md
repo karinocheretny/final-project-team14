@@ -1,9 +1,15 @@
 # final-project-team14
 
-To do:
-
-Make the button on the map lead to the corresponding page, JS code to make create a post functional
-
-make the posts show up on the post page
-organize the posts by location (district not neighborhood)
-
+Website: crimealerts
+Concept: a site for people in Portland to report crimes in their area by district and neighborhood
+Pages:
+    home:
+        includes a basic map of Portland divided into six districts
+        each district has a button on it that when pressed will lead to a page with a map of Portland organized by neighborhoods and
+        a list of the neighborhoods in that specific district
+    districts:
+        a map of Portland by neighborhoods with a list of all the neighborhoods organized by district
+    posts:
+        a collection of crimes that have been reported to the website and allows users to upload a new post 
+    emergency contacts:
+        a list of emergency numbers in Portland OR

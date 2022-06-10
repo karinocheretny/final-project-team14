@@ -10,6 +10,17 @@ a {
     text-decoration: none;
 }
 
+footer {  
+    position: fixed;  
+    left: 10px;  
+    bottom: 5px;  
+    right: 10px;   
+    width: 100%; 
+    background: grey; 
+    color: white;  
+    border-color: rgb(70, 70, 70);
+    text-align: center;  
+    }  
 /* Makes the new alert button a circle*/
 #insert_new_alert, .dist {
     border-radius: 50%;
@@ -119,6 +130,8 @@ a {
     left: 550px;
 }
 
+/* Logo */
+
 .site-title img{
     width: 10%;
     height: 10%;
@@ -127,11 +140,6 @@ a {
 .site-title {
     display: inline-block;
     margin: 20;
-    /* padding: 10px 20px;
-    font-size: 30px;
-    font-weight: 100;
-    background-color: #d3ab6d;
-    color: rgb(255, 255, 255);*/
 }
 
 .navbar {
@@ -161,6 +169,12 @@ a {
     color: green;
 }
 
+.navlink a {
+    padding: 8px 10px;
+    display: inline-block;
+    color: #ffeda3;
+}
+
 a {
     color: #ffeda3;
 }
@@ -173,12 +187,6 @@ a:focus {
 a:focus {
     outline: none;
 }
-
-.navlink a {
-    padding: 8px 10px;
-    display: inline-block;
-    color: #ffeda3;}
-
 
 #insert_new_alert {
     background-color: red;
@@ -241,6 +249,7 @@ a:focus {
     z-index: 1000;
     background-color: rgba(0, 0, 0, 0.85);
 }
+
 
 .district-container{
     color: white;
