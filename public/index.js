@@ -1,31 +1,15 @@
 /* Inserts a new report into the page */
 function insertNewReport(reporttext, reportdistrict, reportdate, reporttime, reportneighborhood, reportseverity) {
     var new_report = Handlebars.templates.post({
-      text: reporttext,
-      date: reportdate,
-      severity: reportseverity,
-      time: reporttime,
-      district: reportdistrict,
-      neighborhood:  reportneighborhood
+        text: reporttext,
+        date: reportdate,
+        severity: reportseverity,
+        time: reporttime,
+        district: reportdistrict,
+        neighborhood: reportneighborhood
     })
-    console.log(new_report)
-    console.log("reporttext: ", reporttext)
-    console.log("reportdate: ", reportdate)
-    console.log("reportseverity: ", reportseverity)
-    console.log("reporttime: ", reporttime)
-    console.log("reportdistrict: ", reportdistrict)
-    console.log("reportneighborhood: ", reportneighborhood)
 
-
-
-//Function to clear out the input entered in the modal
-function clearAlertInputValues(reporttext, reportdistrict, reportdate, reporttime, reportneighborhood, reportseverity) {
-  var inputs = document.getElementsByClassName("input")
-
-  while(inputs.item(0) !== null) {
-    inputs.item(0).remove()
-  }
-}
+   
   
     var postContainer = document.querySelector('main.post-container');
     postContainer.insertAdjacentHTML('beforeend', new_report);
@@ -33,7 +17,17 @@ function clearAlertInputValues(reporttext, reportdistrict, reportdate, reporttim
   }
 
 
-  var allPosts = []
+var allPosts = []
+
+ //Function to clear out the input entered in the modal
+    function ClearInputValues() {
+        var PostInputElems = document.getElementsByClassName('post-content');
+        for (var i = 0; i < PostInputElems.length; i++) {
+            var input = PostInputElems[i].querySelector('post-text', 'post-date', 'post-time', 'post-district', 'post-neighborhood', 'post-severity');
+            if(input.value != null)
+                input.value = '';
+    }
+}
 
 
 //Adds the new report when the user clicks the "report" button
@@ -62,7 +56,8 @@ function clearAlertInputValues(reporttext, reportdistrict, reportdate, reporttim
       
       console.log(reportText, reportdate, reportseverity, reporttime, reportdistrict, reportneighborhood)
       insertNewReport(reportText, reportdistrict, reportdate, reporttime, reportneighborhood, reportseverity)
-      hideCreateAlertModal();
+        hideCreateAlertModal();
+    
     } 
     else{
       alert('You must fill in all forms')
@@ -87,7 +82,8 @@ function clearAlertInputValues(reporttext, reportdistrict, reportdate, reporttim
     var createAlertModal = document.getElementById('create-alert-modal');
     modalBackdrop.classList.add('hidden');
     createAlertModal.classList.add('hidden');
-  
+        
+    ClearInputValues();
     
   }
   

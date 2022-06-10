@@ -15,19 +15,22 @@
 
     </head>
     <body>
-        
+
 
         {{> navbar}}
 
-        {{> neighborhoodmap}}
-
         <main class="district-container">
+            <p class="neighbor-List">NEIGHBORHOOD LIST:</p>
             {{#each neighborhoods}}
-                {{> neighborhood}}
+            {{> neighborhood}}
             {{/each}}
 
-
         </main>
+
+        {{> neighborhoodmap}}
+
+
+
 
     </body>
 </html>

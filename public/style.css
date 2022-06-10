@@ -52,6 +52,16 @@ footer {
     border-style: groove;
 }
 
+.neighbor-List{
+    color: red;
+
+}
+
+.neighborhood-list{
+
+    font-weight: bold;
+
+}
 /* From uiverse.io */
 /*https://uiverse.io/detail/cssbuttons-io/funny-dog-69 */
 .dist {
@@ -101,22 +111,22 @@ footer {
 /*Individual District buttons on map */
 
 #nw_district {
-    top: 310px;
+    top: 330px;
     left: 330px;
 }
 
 #sw_district {
-    top: 500px;
+    top: 510px;
     left: 300px;
 }
 
 #n_district {
-    top: 200px;
+    top: 230px;
     left: -160px;
 }
 
 #ne_district {
-    top: 300px;
+    top: 310px;
     left: 200px;
 }
 
@@ -240,6 +250,10 @@ a:focus {
     font-weight: bold;
 }
 
+.post-district {
+    color: red;
+}
+
 #modal-backdrop {
     position: fixed;
     top: 0;
@@ -254,11 +268,13 @@ a:focus {
 .district-container{
     color: white;
     margin:10px;
-    top: 1000px;
+    top: 900px;
     position: relative;
     column-count: 5;
     column-gap: 50px;
     display:inline-block;
+    bottom: 20px;
+
 }
 
 #create-alert-modal {
