@@ -75,6 +75,16 @@ app.get('/districts', function (req, res, next){
     })}
 })
 
+app.get('/districts/:d_name', function (req, res, next) {
+    var name = (req.params['d_name'])
+    res.status(200).render('basicPage', {
+        mainPage: false,
+        showPosts: false
+    })
+
+
+})
+
 
 /* posts page, adds in posts from the json script */
 app.get('/posts', function (req, res, next){
