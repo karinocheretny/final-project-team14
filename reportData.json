@@ -1,7 +1,7 @@
 [
     {
         "text": "Someone tried to steal my purse",
-        "date": "12-22-2021",
+        "date": "2021-12-22",
         "time": "12:15 AM",
         "district": "NW",
         "neighborhood": "Forest Park",
@@ -9,7 +9,7 @@
     },
     {
         "text": "A child took a piece of candy from a store",
-        "date": "11-14-2021",
+        "date": "2021-11-24",
         "time": "12:15 PM",
         "district": "SW",
         "neighborhood": "Hillsdale",
@@ -17,7 +17,7 @@
     },
     {
         "text": "Someone was murdered ",
-        "date": "08-01-2021",
+        "date": "2021-08-01",
         "time": "12:00 AM",
         "district": "NW",
         "neighborhood": "Forest Park",
@@ -25,7 +25,7 @@
     },
     {
         "text": "Hit and Run",
-        "date": "12-22-2021",
+        "date": "2021-12-22",
         "time": "12:15 AM",
         "district": "E",
         "neighborhood": "Pleasant Valley",
@@ -33,7 +33,7 @@
     },    
     {
         "text": "Someone vandalized a store downtown",
-        "date": "12-04-2021",
+        "date": "2021-12-04",
         "time": "12:15 PM",
         "district": "NW",
         "neighborhood": "Downtown",
@@ -41,7 +41,7 @@
     },
     {
         "text": "A drunk driver hit a stop sign",
-        "date": "1/1/2022",
+        "date": "2022-01-01",
         "time": "12:53 AM",
         "district": "E",
         "neighborhood": "Pleasant Valley",
@@ -49,7 +49,7 @@
     },
     {
         "text": "Bank Robbery",
-        "date": "03/06/2000",
+        "date": "2000-03-06",
         "time": "4:00 PM",
         "district": "NW",
         "neighborhood": "Goosehollow",
@@ -57,7 +57,7 @@
     },
     {
         "text": "Suspicious person outside the school",
-        "date": "12-22-2021",
+        "date": "2021-12-22",
         "time": "2:50 PM",
         "district": "NE",
         "neighborhood": "Woodlawn",

@@ -14,8 +14,6 @@ app.set('views', path.join(__dirname, 'views'));
 
 var reportData = require("./reportData.json")
 
-var districtdata = require("./districtData.json")
-
 var neighborhooddata = require("./neighborhoods.json")
 
 
@@ -67,7 +65,7 @@ app.get('/emergency', function (req, res, next) {
 
 
 app.get('/districts', function (req, res, next){
-    if (districtdata){
+    if (neighborhooddata){
         res.status(200).render('districtpage', {
             neighborhoods:neighborhooddata
 

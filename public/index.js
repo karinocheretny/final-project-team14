@@ -83,11 +83,9 @@ function clearAlertInputValues(reporttext, reportdistrict, reportdate, reporttim
 
 /* Deletes all of the values from the modal so it's clear for the next report */
     function clearAlertInputValues() {
-        var alertInputElems = document.getElementsByClassName('alert-input-element');
-        for (var i = 0; i < alertInputElems.length; i++) {
-          var input = alertInputElems[i].querySelector('input, textarea');
-          input.value = '';
-        }
+      reporttext = document.getElementById('report-text-input')
+      console.log(reporttext)
+        
       }
 
 
@@ -95,11 +93,11 @@ function clearAlertInputValues(reporttext, reportdistrict, reportdate, reporttim
     function hideCreateAlertModal() {
     var modalBackdrop = document.getElementById('modal-backdrop');
     var createAlertModal = document.getElementById('create-alert-modal');
-  
+    clearAlertInputValues();
     modalBackdrop.classList.add('hidden');
     createAlertModal.classList.add('hidden');
   
-    clearAlertInputValues();
+    
   }
   
 allPosts.forEach(function (post){

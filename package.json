@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "dev": "node node_modules/nodemon/bin/nodemon.js server.js",
-    "build": "handlebars views/partials/navbar.handlebars -f public/navbarTemplate.js && handlebars views/partials/map.handlebars -f public/mapTemplate.js && handlebars views/partials/createpost.handlebars -f public/createpostTemplate.js && handlebars views/404.handlebars -f public/404Template.js && handlebars views/partials/post.handlebars -f public/postTemplate.js && handlebars views/partials/neighborhood.handlebars -f public/neighborhoodTemplate.js && handlebars views/partials/district.handlebars -f public/districtTemplate.js && handlebars views/partials/neighborhoodmap.handlebars -f public/neighborhoodmapTemplate.js ",
+    "build": "handlebars views/partials/navbar.handlebars -f public/navbarTemplate.js && handlebars views/partials/map.handlebars -f public/mapTemplate.js && handlebars views/partials/createpost.handlebars -f public/createpostTemplate.js && handlebars views/404.handlebars -f public/404Template.js && handlebars views/partials/post.handlebars -f public/postTemplate.js && handlebars views/partials/neighborhood.handlebars -f public/neighborhoodTemplate.js && handlebars views/partials/district.handlebars -f public/districtTemplate.js && handlebars views/partials/neighborhoodmap.handlebars -f public/neighborhoodmapTemplate.js && handlebars views/ind_districtpage.handlebars -f public/ind_districtpageTemplate.js",
     "prestart": "npm run build",
     "predev": "npm run build"
   },
