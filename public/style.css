@@ -90,7 +90,7 @@ a {
 
 #nw_district {
     top: 310px;
-    left: 300px;
+    left: 330px;
 }
 
 #sw_district {
@@ -99,8 +99,8 @@ a {
 }
 
 #n_district {
-    top: 225px;
-    left: -180px;
+    top: 200px;
+    left: -160px;
 }
 
 #ne_district {
@@ -244,8 +244,10 @@ a:focus {
 .district-container{
     color: white;
     margin:10px;
+    top: 1000px;
     position: relative;
-    max-height: 100px;
+    column-count: 5;
+    column-gap: 50px;
     display:inline-block;
 }
 

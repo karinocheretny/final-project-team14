@@ -30,5 +30,37 @@
         "district": "E",
         "neighborhood": "Pleasant Valley",
         "severity": "8"
+    },    
+    {
+        "text": "Someone vandalized a store downtown",
+        "date": "12-04-2021",
+        "time": "12:15 PM",
+        "district": "NW",
+        "neighborhood": "Downtown",
+        "severity": "4"
+    },
+    {
+        "text": "A drunk driver hit a stop sign",
+        "date": "1/1/2022",
+        "time": "12:53 AM",
+        "district": "E",
+        "neighborhood": "Pleasant Valley",
+        "severity": "6"
+    },
+    {
+        "text": "Bank Robbery",
+        "date": "03/06/2000",
+        "time": "4:00 PM",
+        "district": "NW",
+        "neighborhood": "Goosehollow",
+        "severity": "7"
+    },
+    {
+        "text": "Suspicious person outside the school",
+        "date": "12-22-2021",
+        "time": "2:50 PM",
+        "district": "NE",
+        "neighborhood": "Woodlawn",
+        "severity": "3"
     }
 ]
