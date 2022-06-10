@@ -15,6 +15,14 @@ function insertNewReport(reporttext, reportdistrict, reportdate, reporttime, rep
     console.log("reporttime: ", reporttime)
     console.log("reportdistrict: ", reportdistrict)
     console.log("reportneighborhood: ", reportneighborhood)
+
+function clearAlertInputValues(reporttext, reportdistrict, reportdate, reporttime, reportneighborhood, reportseverity) {
+  var inputs = document.getElementsByClassName("input")
+
+  while(inputs.item(0) !== null) {
+    inputs.item(0).remove()
+  }
+}
   
     var postContainer = document.querySelector('main.post-container');
     postContainer.insertAdjacentHTML('beforeend', new_report);
