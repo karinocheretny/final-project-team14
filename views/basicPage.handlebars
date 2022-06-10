@@ -18,7 +18,16 @@
 
     {{> navbar}}
 
-    {{> map}}
+    {{#if mainPage}}
+        {{> map}}
+    {{/if}}
+
+     {{#if showPosts}}
+         {{> post}}
+     {{/if}}
+
+
+
   
 
 </body>
