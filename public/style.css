@@ -77,7 +77,7 @@ a {
 /*Individual District buttons on map */
 
 #nw_district {
-    top: 290px;
+    top: 310px;
     left: 300px;
 }
 
@@ -87,12 +87,12 @@ a {
 }
 
 #n_district {
-    top: 200px;
+    top: 225px;
     left: -180px;
 }
 
 #ne_district {
-    top: 280px;
+    top: 300px;
     left: 200px;
 }
 
