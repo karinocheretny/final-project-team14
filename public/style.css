@@ -28,12 +28,24 @@ a {
     border-style: groove;
 }
 
+.neighborhood-map{
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    width: 1100px;
+    height: 800px;
+    border-width: 5px;
+    border-color: black;
+    border: black;
+    border-style: groove;
+}
+
 /* From uiverse.io */
 /*https://uiverse.io/detail/cssbuttons-io/funny-dog-69 */
 .dist {
     --glow-color: black;
     --glow-spread-color: rgba(1, 24, 232, 0.3);
-    --enhanced-glow-color: rgb(231, 206, 255));
+    --enhanced-glow-color: rgb(231, 206, 255);
     --btn-color: rgba(255, 243, 194, 1);
     border: .25em solid var(--glow-color);
     padding: 1em 3em;
@@ -139,25 +151,6 @@ a {
     left: 100px;
 }
 
-li {
-    list-style: none;
-    float: left;
-    margin-left: 15px;
-    padding-top: 0px;
-    color: white;
-}
-
-.emergency-numbers{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    float:none;
-    font-weight: 600;
-    margin-top: 15px;
-    color: #ffeda3;
-
-}
-
 .navitem {
     display: inline-block;
     color: #ffeda3;
@@ -248,16 +241,12 @@ a:focus {
     background-color: rgba(0, 0, 0, 0.85);
 }
 
-.neighborhood-list{
-    color: white;
-    background-color: red;
-
-}
 .district-container{
     color: white;
-}
-#districts-id {
-    color: white;
+    margin:10px;
+    position: relative;
+    max-height: 100px;
+    display:inline-block;
 }
 
 #create-alert-modal {
@@ -272,12 +261,6 @@ a:focus {
 
 .hidden {
     display: none;
-}
-
-.search{
-    position: absolute;
-    top: 30px;
-    right: 15px;
 }
 
 .modal-dialog {
@@ -361,4 +344,19 @@ h2{
 .modal-footer .modal-accept-button:hover {
     background-color: #ffeda3;
     color: black;
+}
+
+li {
+    list-style: none;
+}
+.emergency-numbers{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    float:none;
+    font-weight: 600;
+    margin-top: 15px;
+    color: #ffeda3;
+    list-style: none;
+
 }
