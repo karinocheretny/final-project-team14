@@ -55,7 +55,7 @@ var allPosts = []
       /* Outputting the information to the console to ensure that the values are correct */
       
       console.log(reportText, reportdate, reportseverity, reporttime, reportdistrict, reportneighborhood)
-      insertNewReport(reportText, reportdistrict, reportdate, reporttime, reportneighborhood, reportseverity)
+      insertNewReport(reportText, reportdistrict.toUpperCase(), reportdate, reporttime, reportneighborhood, reportseverity)
         hideCreateAlertModal();
     
     } 
