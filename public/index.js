@@ -16,6 +16,9 @@ function insertNewReport(reporttext, reportdistrict, reportdate, reporttime, rep
     console.log("reportdistrict: ", reportdistrict)
     console.log("reportneighborhood: ", reportneighborhood)
 
+
+
+//Function to clear out the input entered in the modal
 function clearAlertInputValues(reporttext, reportdistrict, reportdate, reporttime, reportneighborhood, reportseverity) {
   var inputs = document.getElementsByClassName("input")
 
