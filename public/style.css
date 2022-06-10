@@ -28,6 +28,7 @@ a {
     border-style: groove;
 }
 
+/* Map location on district page */
 .neighborhood-map{
     position: absolute;
     top: 70px;

@@ -62,17 +62,6 @@ app.get('/emergency', function (req, res, next) {
     })
 })
 
-
-
-app.get('/districts', function (req, res, next){
-    if (neighborhooddata){
-        res.status(200).render('districtpage', {
-            neighborhoods:neighborhooddata
-
-            
-    })}
-})
-
 app.get('/districts/:d', function (req, res, next) {
     if (neighborhooddata){
         var name = (req.params.d.toUpperCase());
@@ -86,23 +75,21 @@ app.get('/districts/:d', function (req, res, next) {
 })
 
 
-app.get('districts/:n', function (req, res, next){
+app.get('/districts', function (req, res, next){
     if (neighborhooddata){
-        var name = (req.params.d.toUpperCase());
-        var specific_districts = neighborhooddata.filter( neighborhooddata => neighborhooddata.district === name )
-        res.status(200).render('districtpage',{
-            neighborhoods:specific_districts
+        res.status(200).render('districtpage', {
+            neighborhoods:neighborhooddata
 
             
     })}
 })
 
 
+
 /* posts page, adds in posts from the json script */
 app.get('/posts', function (req, res, next){
     if (reportData){
         
-
     res.status(200).render('postpage', {
         posts:reportData
     })}
