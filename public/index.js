@@ -25,7 +25,7 @@ function insertNewReport(reporttext, reportdistrict, reportdate, reporttime, rep
   var allPosts = []
 
 
-
+//Adds the new report when the user clicks the "report" button
   function handleModalAcceptClick() {
     /* Creating variables to assign */
     var reportText = document.getElementById('report-text-input').value;
@@ -59,10 +59,6 @@ function insertNewReport(reporttext, reportdistrict, reportdate, reporttime, rep
 
     }
 
-    function ClearSearchReinsertReports(){
-      document.getElementById
-    }
-
 /* Shows the report modal */
     function showCreateAlertModal() {
     console.log("pressed create alert button")
@@ -73,31 +69,25 @@ function insertNewReport(reporttext, reportdistrict, reportdate, reporttime, rep
     createAlertModal.classList.remove('hidden');
     }
 
-/* Deletes all of the values from the modal so it's clear for the next report */
-    function clearAlertInputValues() {
-      reporttext = document.getElementById('report-text-input')
-      console.log(reporttext)
-        
-      }
-
 
 /* Closes the modal */      
     function hideCreateAlertModal() {
     var modalBackdrop = document.getElementById('modal-backdrop');
     var createAlertModal = document.getElementById('create-alert-modal');
-    clearAlertInputValues();
     modalBackdrop.classList.add('hidden');
     createAlertModal.classList.add('hidden');
   
     
   }
   
+
+//Inserts all of the reports into the post page  
 allPosts.forEach(function (post){
   insertNewReport(post.text, post.district, post.date, post.time, post.neighborhood, post.severity)
 })
 
 
-  
+  //looks throug all the posts and gets their values
   function parsePostElem(postElem) {
     var post = {};
 
@@ -122,12 +112,9 @@ allPosts.forEach(function (post){
     return post;
   }
 
+  
+//listens to events and performs javascript
   window.addEventListener('DOMContentLoaded', function (){
-/*       var reportsCollection = document.getElementsByClassName('post');
-      for(var i = 0; i < reportsCollection.length; i++){
-          allPosts.push(parsePostElem(reportsCollection[i]))
-      }  */
-
 
       var createPostButton = document.getElementById('insert_new_alert');
       if (createPostButton) {
