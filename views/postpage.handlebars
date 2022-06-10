@@ -11,21 +11,23 @@
 
 </head>
 <body>
+
+    {{> navbar}}
+
+    {{> createpost}}
+
     <main class="post-container">
-    
+
         {{#each posts}}
             {{> post}}
         {{/each}}
-        
-        {{> navbar}}
 
-        {{> createpost}}
-        
+
+    </main>
         <div class="new_alert" id="insert_alert">
             <button type="button" class="new_alert" id="insert_new_alert">+</button>
         </div>
 
-    </main>
 </body>
 </html>
 

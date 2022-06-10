@@ -16,10 +16,10 @@ templates['post'] = template({"compiler":[8,">= 4.3.0"],"main":function(containe
     + alias4(((helper = (helper = lookupProperty(helpers,"time") || (depth0 != null ? lookupProperty(depth0,"time") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"time","hash":{},"data":data,"loc":{"start":{"line":10,"column":12},"end":{"line":10,"column":20}}}) : helper)))
     + "\r\n        </p>\r\n        <p class=\"post-district\">\r\n            "
     + alias4(((helper = (helper = lookupProperty(helpers,"district") || (depth0 != null ? lookupProperty(depth0,"district") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"district","hash":{},"data":data,"loc":{"start":{"line":13,"column":12},"end":{"line":13,"column":24}}}) : helper)))
-    + "\r\n        </p>\r\n        <p class=\"post-neighborhood\">\r\n            "
+    + " District\r\n        </p>\r\n        <p class=\"post-neighborhood\">\r\n            "
     + alias4(((helper = (helper = lookupProperty(helpers,"neighborhood") || (depth0 != null ? lookupProperty(depth0,"neighborhood") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"neighborhood","hash":{},"data":data,"loc":{"start":{"line":16,"column":12},"end":{"line":16,"column":28}}}) : helper)))
-    + "\r\n        </p>\r\n        <p class=\"post-severity\">\r\n            "
-    + alias4(((helper = (helper = lookupProperty(helpers,"severity") || (depth0 != null ? lookupProperty(depth0,"severity") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"severity","hash":{},"data":data,"loc":{"start":{"line":19,"column":12},"end":{"line":19,"column":24}}}) : helper)))
+    + "\r\n        </p>\r\n        <p class=\"post-severity\">\r\n           Severity: "
+    + alias4(((helper = (helper = lookupProperty(helpers,"severity") || (depth0 != null ? lookupProperty(depth0,"severity") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"severity","hash":{},"data":data,"loc":{"start":{"line":19,"column":21},"end":{"line":19,"column":33}}}) : helper)))
     + "\r\n        </p>\r\n    </div>\r\n</article>";
 },"useData":true});
 })();
